@@ -25,6 +25,11 @@ body {
   text-decoration: none;
 }
 
+.navbar a:hover {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
 .anchor {
   display: block;
   position: relative;
@@ -44,7 +49,7 @@ body {
 
 .jumbotron-text {
   /*TAGLINE UNDER NAME*/
-  font-weight: 400;
+  font-weight: 200;
   font-size: 2em;
   color: white;
   text-align: center;
@@ -54,7 +59,8 @@ body {
 .jumbotron-text h1 {
   /*YOUR NAME*/
   text-transform: uppercase;
-  font-weight: 800;
+  font-style: italic;
+  font-weight: 600;
   font-size: 3em;
   margin-bottom: 0;
 }
@@ -182,8 +188,9 @@ h4 {
 
 /*PROJECTS*/
 .project-card {
+  width: 350px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: white;
   border: 1px solid rgba(0,0,0,.125);
   border-radius: 5px;
@@ -196,9 +203,12 @@ h4 {
 }
 
 .project-image img {
+  width: 350px;
+  height: 250px;
   display: block;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  /* border: 1px solid black; */
 }
 
 .project-content {
@@ -272,4 +282,26 @@ h4 {
 
 .white-text {
   color: white;
+}
+
+.about {
+  height: 100vh;
+}
+
+.skills {
+  height: 50vh;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  margin-top: 50px;
+}
+
+.contact {
+  color: white;
+}
+
+.major {
+  font-weight: 400;       
 }
